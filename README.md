@@ -77,7 +77,7 @@ This creates `/root/clean/etc/ssh/sshd_config`.
 Copy [`integrity-plugin.sh`](./integrity-plugin.sh) to its final location with root-only permissions:
 
 ```bash
-install -m 700 -o root -g root integrity-plugin.sh /usr/local/sbin/integrity-plugin.sh
+install -m 755 -o root -g root integrity-plugin.sh /usr/local/sbin/integrity-plugin.sh
 ```
 
 Check the syntax:
