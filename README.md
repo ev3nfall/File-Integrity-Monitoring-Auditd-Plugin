@@ -66,7 +66,7 @@ The last command should show the line starting with `#`. Other hits under `/etc/
 Baselines mirror the real path under `/root/clean`. The plugin finds a file's baseline by prepending `/root/clean` to its path.
 
 ```bash
-mkdir -p /root/clean && chmod 700 /root/clean
+mkdir -p /root/clean && chmod 755 /root/clean
 cd / && cp -p --parents etc/ssh/sshd_config /root/clean/
 ```
 
